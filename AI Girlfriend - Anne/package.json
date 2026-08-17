@@ -1,0 +1,12 @@
+{
+  "name": "anne",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n agent,ui -c green,blue \"uv run --directory gemini-agent python src/agent.py dev\" \"node scripts/dev-ui.mjs\"",
+    "install:all": "npm install && npm install --prefix anne-ui"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

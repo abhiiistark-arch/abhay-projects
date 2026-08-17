@@ -1,0 +1,642 @@
+{
+  "timestamp": "2026-03-25T18:38:51.982Z",
+  "total_endpoints": 16,
+  "results": [
+    {
+      "tool_slug": "GMAIL_LIST_MESSAGES",
+      "method": "GET",
+      "path": "/gmail/v1/users/me/messages",
+      "status": "valid",
+      "http_status_code": 200,
+      "response_summary": "minimal request: Endpoint executed successfully with 200. (endpoint=/gmail/v1/users/me/messages, account=ca_wqA1UWnj8FRV)",
+      "response_body": "{\"messages\":[{\"id\":\"19d263f57eded606\",\"threadId\":\"19d263f57eded606\"},{\"id\":\"19d263f5704b6b1a\",\"threadId\":\"19d263f5704b6b1a\"},{\"id\":\"19d263c6a96be11c\",\"threadId\":\"19d263c6a96be11c\"},{\"id\":\"19d263c68204cabd\",\"threadId\":\"19d263c68204cabd\"},{\"id\":\"19d262c47af37c92\",\"threadId\":\"19d262c47af37c92\"},{\"id\":\"19d262c4498e0471\",\"threadId\":\"19d262c4498e0471\"},{\"id\":\"19d262a9af86a1aa\",\"threadId\":\"19d262a9af86a1aa\"},{\"id\":\"19d262840defa0b3\",\"threadId\":\"19d26283a7e20901\"},{\"id\":\"19d26273fd78266d\",\"threadId\":\"19d26273483902fa\"},{\"id\":\"19d26273483902fa\",\"threadId\":\"19d26273483902fa\"},{\"id\":\"19d2625bcc1d9ab9\",\"threadId\":\"19d2625b43cfadd7\"},{\"id\":\"19d2625b43cfadd7\",\"threadId\":\"19d2625b43cfadd7\"},{\"id\":\"19d26255022ab743\",\"threadId\":\"19d262547cf5a81a\"},{\"id\":\"19d262547cf5a81a\",\"threadId\":\"19d262547cf5a81a\"},{\"id\":\"19d2625432a1e879\",\"threadId\":\"19d2625432a1e879\"},{\"id\":\"19d262119979a0ae\",\"threadId\":\"19d262119979a0ae\"},{\"id\":\"19d262119204f71e\",\"threadId\":\"19d262119204f71e\"},{\"id\":\"19d261d74e2debac\",\"threadId\":\"19d261d6deb88ac3\"},{\"id\":\"19d261d6deb88ac3\",\"threadId\":\"19d261d6deb88ac3\"},{\"id\":\"19d260e6a2cc1af6\",\"threadId\":\"19d260d1767c3230\"},{\"id\":\"19d260d1767c3230\",\"threadId\":\"19d260d1767c3230\"},{\"id\":\"19d25e687253825a\",\"threadId\":\"19d25d4997ef8c3f\"},{\"id\":\"19d25d501b6b8373\",\"threadId\":\"19d25d4997ef8c3f\"},{\"id\":\"19d25d468c6284d0\",\"threadId\":\"19d25d3ea0b42a3b\"},{\"id\":\"19d25d399e3981d3\",\"threadId\":\"19d25d286886b52e\"},{\"id\":\"19d25d104f5f3c28\",\"threadId\":\"19d25d08fe987898\"},{\"id\":\"19d25d04439a6403\",\"threadId\":\"19d25cf4c77932ce\"},{\"id\":\"19d25cef07b2487e\",\"threadId\":\"19d25ce71afbf06f\"},{\"id\":\"19d2586cc9d4e72f\",\"threadId\":\"19d2586cc9d4e72f\"},{\"id\":\"19d257f1a4faaea8\",\"threadId\":\"19d257f1a4faaea8\"},{\"id\":\"19d202a0945c075c\",\"threadId\":\"19d202a0945c075c\"},{\"id\":\"19d1f8ce277c3c37\",\"threadId\":\"19d1f8ce277c3c37\"},{\"id\":\"19d1b03051b1c1f6\",\"threadId\":\"19d1b03051b1c1f6\"},{\"id\":\"19d1ab9612cf6ab5\",\"threadId\":\"19d1ab9612cf6ab5\"},{\"id\":\"19d1ab8ebfa1792a\",\"threadId\":\"19d1ab8ebfa1792a\"},{\"id\":\"19d16adcf0ab199f\",\"threadId\":\"19d16adcf0ab199f\"},{\"id\":\"19d0c73e7d6f9e20\",\"threadId\":\"19d0c73e7d6f9e20\"},{\"id\":\"19d0b9079f3e831b\",\"threadId\":\"19d0b9079f3e831b\"},{\"id\":\"19d0ae39d746dfb1\",\"threadId\":\"19d0ae39d746dfb1\"},{\"id\":\"19d097f3c6c7d230\",\"threadId\":\"19d097f3c6c7d230\"},{\"id\":\"19d094ac4d072873\",\"threadId\":\"19d094ac4d072873\"},{\"id\":\"19d0801849fde248\",\"threadId\":\"19d0801849fde248\"},{\"id\":\"19d07b32fe913dfa\",\"threadId\":\"19d07b32fe913dfa\"},{\"id\":\"19d0735bccf13b6d\",\"threadId\":\"19d0735bccf13b6d\"},{\"id\":\"19d06d5008155e6d...<truncated>",
+      "required_scopes": [
+        "https://www.googleapis.com/auth/gmail.readonly"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "https://www.googleapis.com/auth/profile.emails.read",
+        "https://www.googleapis.com/auth/user.birthday.read",
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/user.addresses.read",
+        "openid",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/contacts.other.readonly",
+        "https://www.googleapis.com/auth/profile.language.read",
+        "https://www.googleapis.com/auth/user.phonenumbers.read"
+      ]
+    },
+    {
+      "tool_slug": "GMAIL_GET_MESSAGE",
+      "method": "GET",
+      "path": "/gmail/v1/users/me/messages/{messageId}",
+      "status": "valid",
+      "http_status_code": 200,
+      "response_summary": "minimal request: Endpoint executed successfully with 200. (endpoint=/gmail/v1/users/me/messages/19d262c47af37c92, account=ca_wqA1UWnj8FRV)",
+      "response_body": {
+        "id": "19d262c47af37c92",
+        "threadId": "19d262c47af37c92",
+        "labelIds": [
+          "DRAFT"
+        ],
+        "snippet": "Please review this task and schedule follow-up if needed.",
+        "payload": {
+          "partId": "",
+          "mimeType": "text/plain",
+          "filename": "",
+          "headers": [
+            {
+              "name": "Received",
+              "value": "from 511566560828 named unknown by gmailapi.google.com with HTTPREST; Wed, 25 Mar 2026 14:05:29 -0400"
+            },
+            {
+              "name": "To",
+              "value": "[redacted-email]"
+            },
+            {
+              "name": "Subject",
+              "value": "VALIDATION-TEST-Action Required Task"
+            },
+            {
+              "name": "Date",
+              "value": "Wed, 25 Mar 2026 14:05:29 -0400"
+            },
+            {
+              "name": "Message-Id",
+              "value": "<CAEMDx+OZH5ACYA=uh4fErv+7YCguX8vK52d=apf0=[redacted-email]>"
+            },
+            {
+              "name": "From",
+              "value": "[redacted-email]"
+            }
+          ],
+          "body": {
+            "size": 57,
+            "data": "UGxlYXNlIHJldmlldyB0aGlzIHRhc2sgYW5kIHNjaGVkdWxlIGZvbGxvdy11cCBpZiBuZWVkZWQu"
+          }
+        },
+        "sizeEstimate": 404,
+        "historyId": "48333",
+        "internalDate": "1774461929000"
+      },
+      "required_scopes": [
+        "https://www.googleapis.com/auth/gmail.readonly"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "https://www.googleapis.com/auth/profile.emails.read",
+        "https://www.googleapis.com/auth/user.birthday.read",
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/user.addresses.read",
+        "openid",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/contacts.other.readonly",
+        "https://www.googleapis.com/auth/profile.language.read",
+        "https://www.googleapis.com/auth/user.phonenumbers.read"
+      ]
+    },
+    {
+      "tool_slug": "GMAIL_SEND_MESSAGE",
+      "method": "POST",
+      "path": "/gmail/v1/users/me/messages/send",
+      "status": "valid",
+      "http_status_code": 200,
+      "response_summary": "minimal request: Endpoint executed successfully with 200. (endpoint=/gmail/v1/users/me/messages/send, account=ca_wqA1UWnj8FRV)",
+      "response_body": {
+        "id": "19d264ac928b2f70",
+        "threadId": "19d264ac928b2f70",
+        "labelIds": [
+          "UNREAD",
+          "SENT",
+          "INBOX"
+        ]
+      },
+      "required_scopes": [
+        "https://www.googleapis.com/auth/gmail.send"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "https://www.googleapis.com/auth/profile.emails.read",
+        "https://www.googleapis.com/auth/user.birthday.read",
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/user.addresses.read",
+        "openid",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/contacts.other.readonly",
+        "https://www.googleapis.com/auth/profile.language.read",
+        "https://www.googleapis.com/auth/user.phonenumbers.read"
+      ]
+    },
+    {
+      "tool_slug": "GMAIL_LIST_LABELS",
+      "method": "GET",
+      "path": "/gmail/v1/users/me/labels",
+      "status": "valid",
+      "http_status_code": 200,
+      "response_summary": "minimal request: Endpoint executed successfully with 200. (endpoint=/gmail/v1/users/me/labels, account=ca_wqA1UWnj8FRV)",
+      "response_body": {
+        "labels": [
+          {
+            "id": "CHAT",
+            "name": "CHAT",
+            "messageListVisibility": "hide",
+            "labelListVisibility": "labelHide",
+            "type": "system"
+          },
+          {
+            "id": "SENT",
+            "name": "SENT",
+            "type": "system"
+          },
+          {
+            "id": "INBOX",
+            "name": "INBOX",
+            "type": "system"
+          },
+          {
+            "id": "IMPORTANT",
+            "name": "IMPORTANT",
+            "messageListVisibility": "hide",
+            "labelListVisibility": "labelHide",
+            "type": "system"
+          },
+          {
+            "id": "TRASH",
+            "name": "TRASH",
+            "messageListVisibility": "hide",
+            "labelListVisibility": "labelHide",
+            "type": "system"
+          },
+          {
+            "id": "DRAFT",
+            "name": "DRAFT",
+            "type": "system"
+          },
+          {
+            "id": "SPAM",
+            "name": "SPAM",
+            "messageListVisibility": "hide",
+            "labelListVisibility": "labelHide",
+            "type": "system"
+          },
+          {
+            "id": "CATEGORY_FORUMS",
+            "name": "CATEGORY_FORUMS",
+            "messageListVisibility": "hide",
+            "labelListVisibility": "labelHide",
+            "type": "system"
+          },
+          {
+            "id": "CATEGORY_UPDATES",
+            "name": "CATEGORY_UPDATES",
+            "messageListVisibility": "hide",
+            "labelListVisibility": "labelHide",
+            "type": "system"
+          },
+          {
+            "id": "CATEGORY_PERSONAL",
+            "name": "CATEGORY_PERSONAL",
+            "messageListVisibility": "hide",
+            "labelListVisibility": "labelHide",
+            "type": "system"
+          },
+          {
+            "id": "CATEGORY_PROMOTIONS",
+            "name": "CATEGORY_PROMOTIONS",
+            "messageListVisibility": "hide",
+            "labelListVisibility": "labelHide",
+            "type": "system"
+          },
+          {
+            "id": "CATEGORY_SOCIAL",
+            "name": "CATEGORY_SOCIAL",
+            "messageListVisibility": "hide",
+            "labelListVisibility": "labelHide",
+            "type": "system"
+          },
+          {
+            "id": "YELLOW_STAR",
+            "name": "YELLOW_STAR",
+            "type": "system"
+          },
+          {
+            "id": "STARRED",
+            "name": "STARRED",
+            "type": "system"
+          },
+          {
+            "id": "UNREAD",
+            "name": "UNREAD",
+            "type": "system"
+          }
+        ]
+      },
+      "required_scopes": [
+        "https://www.googleapis.com/auth/gmail.labels"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "https://www.googleapis.com/auth/profile.emails.read",
+        "https://www.googleapis.com/auth/user.birthday.read",
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/user.addresses.read",
+        "openid",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/contacts.other.readonly",
+        "https://www.googleapis.com/auth/profile.language.read",
+        "https://www.googleapis.com/auth/user.phonenumbers.read"
+      ]
+    },
+    {
+      "tool_slug": "GMAIL_GET_PROFILE",
+      "method": "GET",
+      "path": "/gmail/v1/users/me/profile",
+      "status": "valid",
+      "http_status_code": 200,
+      "response_summary": "minimal request: Endpoint executed successfully with 200. (endpoint=/gmail/v1/users/me/profile, account=ca_wqA1UWnj8FRV)",
+      "response_body": {
+        "emailAddress": "[redacted-email]",
+        "messagesTotal": 319,
+        "threadsTotal": 261,
+        "historyId": "48744"
+      },
+      "required_scopes": [
+        "https://www.googleapis.com/auth/gmail.readonly"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "https://www.googleapis.com/auth/profile.emails.read",
+        "https://www.googleapis.com/auth/user.birthday.read",
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/user.addresses.read",
+        "openid",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/contacts.other.readonly",
+        "https://www.googleapis.com/auth/profile.language.read",
+        "https://www.googleapis.com/auth/user.phonenumbers.read"
+      ]
+    },
+    {
+      "tool_slug": "GMAIL_CREATE_DRAFT",
+      "method": "POST",
+      "path": "/gmail/v1/users/me/drafts",
+      "status": "valid",
+      "http_status_code": 200,
+      "response_summary": "minimal request: Endpoint executed successfully with 200. (endpoint=/gmail/v1/users/me/drafts, account=ca_wqA1UWnj8FRV)",
+      "response_body": {
+        "id": "r7535175973685529323",
+        "message": {
+          "id": "19d264aca99ec25f",
+          "threadId": "19d264aca99ec25f",
+          "labelIds": [
+            "DRAFT"
+          ]
+        }
+      },
+      "required_scopes": [
+        "https://www.googleapis.com/auth/gmail.compose"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "https://www.googleapis.com/auth/profile.emails.read",
+        "https://www.googleapis.com/auth/user.birthday.read",
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/user.addresses.read",
+        "openid",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/contacts.other.readonly",
+        "https://www.googleapis.com/auth/profile.language.read",
+        "https://www.googleapis.com/auth/user.phonenumbers.read"
+      ]
+    },
+    {
+      "tool_slug": "GMAIL_LIST_THREADS",
+      "method": "GET",
+      "path": "/gmail/v1/users/me/threads",
+      "status": "valid",
+      "http_status_code": 200,
+      "response_summary": "minimal request: Endpoint executed successfully with 200. (endpoint=/gmail/v1/users/me/threads, account=ca_wqA1UWnj8FRV)",
+      "response_body": "{\"threads\":[{\"id\":\"19d263f57eded606\",\"snippet\":\"Please review this task and schedule follow-up if needed.\",\"historyId\":\"48723\"},{\"id\":\"19d263f5704b6b1a\",\"snippet\":\"This is a validation email for daily productivity workflow testing.\",\"historyId\":\"48744\"},{\"id\":\"19d263c6a96be11c\",\"snippet\":\"Please review this task and schedule follow-up if needed.\",\"historyId\":\"48642\"},{\"id\":\"19d263c68204cabd\",\"snippet\":\"This is a validation email for daily productivity workflow testing.\",\"historyId\":\"48663\"},{\"id\":\"19d262c47af37c92\",\"snippet\":\"Please review this task and schedule follow-up if needed.\",\"historyId\":\"48333\"},{\"id\":\"19d262c4498e0471\",\"snippet\":\"This is a validation email for daily productivity workflow testing.\",\"historyId\":\"48474\"},{\"id\":\"19d262a9af86a1aa\",\"snippet\":\"Please review this task and schedule follow-up if needed.\",\"historyId\":\"48218\"},{\"id\":\"19d26283a7e20901\",\"snippet\":\"Address not found Your message wasn&#39;t delivered to [redacted-email] because the domain example.com couldn&#39;t be found. Check for typos or unnecessary spaces and try again. LEARN MORE This link\",\"historyId\":\"48395\"},{\"id\":\"19d26273483902fa\",\"snippet\":\"Address not found Your message wasn&#39;t delivered to [redacted-email] because the domain example.com couldn&#39;t be found. Check for typos or unnecessary spaces and try again. LEARN MORE This link\",\"historyId\":\"48029\"},{\"id\":\"19d2625b43cfadd7\",\"snippet\":\"Address not found Your message wasn&#39;t delivered to [redacted-email] because the domain example.com couldn&#39;t be found. Check for typos or unnecessary spaces and try again. LEARN MORE This link\",\"historyId\":\"48358\"},{\"id\":\"19d262547cf5a81a\",\"snippet\":\"Address not found Your message wasn&#39;t delivered to [redacted-email] because the domain example.com couldn&#39;t be found. Check for typos or unnecessary spaces and try again. LEARN MORE This link\",\"historyId\":\"48009\"},{\"id\":\"19d2625432a1e879\",\"snippet\":\"This is a validation email for daily productivity workflow testing.\",\"historyId\":\"47829\"},{\"id\":\"19d262119979a0ae\",\"snippet\":\"Please review this task and schedule follow-up if needed.\",\"historyId\":\"47309\"},{\"id\":\"19d262119204f71e\",\"snippet\":\"This is a validation email for daily productivity workflow testing.\",\"historyId\":\"47947\"},{\"id\":\"19d261d6deb88ac3\",\"snippet\":\"Address not found Your message wasn&#39;t delivered to [redacted-email] because the domain example.com couldn&#39;t be found. Check for typos or unnecessary spaces and try again. LEARN MORE This link\",\"historyI...<truncated>",
+      "required_scopes": [
+        "https://www.googleapis.com/auth/gmail.readonly"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "https://www.googleapis.com/auth/profile.emails.read",
+        "https://www.googleapis.com/auth/user.birthday.read",
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/user.addresses.read",
+        "openid",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/contacts.other.readonly",
+        "https://www.googleapis.com/auth/profile.language.read",
+        "https://www.googleapis.com/auth/user.phonenumbers.read"
+      ]
+    },
+    {
+      "tool_slug": "GMAIL_TRASH_MESSAGE",
+      "method": "POST",
+      "path": "/gmail/v1/users/me/messages/{messageId}/trash",
+      "status": "valid",
+      "http_status_code": 200,
+      "response_summary": "minimal request: Endpoint executed successfully with 200. (endpoint=/gmail/v1/users/me/messages/19d262c47af37c92/trash, account=ca_wqA1UWnj8FRV)",
+      "response_body": {
+        "id": "19d262c47af37c92",
+        "threadId": "19d262c47af37c92",
+        "labelIds": [
+          "DRAFT",
+          "TRASH"
+        ]
+      },
+      "required_scopes": [
+        "https://www.googleapis.com/auth/gmail.modify"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "https://www.googleapis.com/auth/profile.emails.read",
+        "https://www.googleapis.com/auth/user.birthday.read",
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/user.addresses.read",
+        "openid",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/contacts.other.readonly",
+        "https://www.googleapis.com/auth/profile.language.read",
+        "https://www.googleapis.com/auth/user.phonenumbers.read"
+      ]
+    },
+    {
+      "tool_slug": "GMAIL_LIST_FOLDERS",
+      "method": "GET",
+      "path": "/gmail/v1/users/me/folders",
+      "status": "invalid_endpoint",
+      "http_status_code": 404,
+      "response_summary": "minimal request: Endpoint path/method appears invalid (404). (endpoint=/users/me/folders, account=ca_wqA1UWnj8FRV)",
+      "response_body": "<!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 404 (Not Found)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}\n  </style>\n  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>\n  <p><b>404.</b> <ins>That’s an error.</ins>\n  <p>The requested URL <code>/users/me/folders</code> was not found on this server.  <ins>That’s all we know.</ins>\n",
+      "required_scopes": [
+        "https://www.googleapis.com/auth/gmail.readonly"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "https://www.googleapis.com/auth/profile.emails.read",
+        "https://www.googleapis.com/auth/user.birthday.read",
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/user.addresses.read",
+        "openid",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/contacts.other.readonly",
+        "https://www.googleapis.com/auth/profile.language.read",
+        "https://www.googleapis.com/auth/user.phonenumbers.read"
+      ]
+    },
+    {
+      "tool_slug": "GMAIL_ARCHIVE_MESSAGE",
+      "method": "POST",
+      "path": "/gmail/v1/users/me/messages/{messageId}/archive",
+      "status": "invalid_endpoint",
+      "http_status_code": 404,
+      "response_summary": "minimal request: Endpoint path/method appears invalid (404). (endpoint=/users/me/messages/19d262c47af37c92/archive, account=ca_wqA1UWnj8FRV)",
+      "response_body": "<!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 404 (Not Found)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}\n  </style>\n  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>\n  <p><b>404.</b> <ins>That’s an error.</ins>\n  <p>The requested URL <code>/users/me/messages/19d262c47af37c92/archive</code> was not found on this server.  <ins>That’s all we know.</ins>\n",
+      "required_scopes": [
+        "https://www.googleapis.com/auth/gmail.modify"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "https://www.googleapis.com/auth/profile.emails.read",
+        "https://www.googleapis.com/auth/user.birthday.read",
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/user.addresses.read",
+        "openid",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/contacts.other.readonly",
+        "https://www.googleapis.com/auth/profile.language.read",
+        "https://www.googleapis.com/auth/user.phonenumbers.read"
+      ]
+    },
+    {
+      "tool_slug": "GOOGLECALENDAR_LIST_EVENTS",
+      "method": "GET",
+      "path": "/calendar/v3/calendars/primary/events",
+      "status": "valid",
+      "http_status_code": 200,
+      "response_summary": "minimal request: Endpoint executed successfully with 200. (endpoint=/calendars/primary/events, account=ca_sCKRS8YhfstO)",
+      "response_body": "{\"kind\":\"calendar#events\",\"etag\":\"\\\"p33nvd85sqqtp60o\\\"\",\"summary\":\"[redacted-email]\",\"description\":\"\",\"updated\":\"2026-03-25T18:26:20.356Z\",\"timeZone\":\"UTC\",\"accessRole\":\"owner\",\"defaultReminders\":[{\"method\":\"popup\",\"minutes\":30}],\"nextSyncToken\":\"CO_2oLzWu5MDEO_2oLzWu5MDGAUgzLWMpgMozLWMpgM=\",\"items\":[{\"kind\":\"calendar#event\",\"etag\":\"\\\"3548914154289214\\\"\",\"id\":\"343geuedpn7akvsh86h6ugso58\",\"status\":\"confirmed\",\"htmlLink\":\"https://www.google.com/calendar/event?eid=MzQzZ2V1ZWRwbjdha3ZzaDg2aDZ1Z3NvNTggYWJoaWlpc3RhcmtAbQ\",\"created\":\"2026-03-25T16:44:36.000Z\",\"updated\":\"2026-03-25T16:44:37.144Z\",\"summary\":\"Doctor Appointment\",\"creator\":{\"email\":\"[redacted-email]\",\"self\":true},\"organizer\":{\"email\":\"[redacted-email]\",\"self\":true},\"start\":{\"dateTime\":\"2026-04-24T17:00:00Z\",\"timeZone\":\"UTC\"},\"end\":{\"dateTime\":\"2026-04-24T18:00:00Z\",\"timeZone\":\"UTC\"},\"iCalUID\":\"[redacted-email]\",\"sequence\":0,\"reminders\":{\"useDefault\":true},\"eventType\":\"default\"},{\"kind\":\"calendar#event\",\"etag\":\"\\\"3548914227147262\\\"\",\"id\":\"5guf1uhdu2gmnhuld8c2hmnv6q\",\"status\":\"confirmed\",\"htmlLink\":\"https://www.google.com/calendar/event?eid=NWd1ZjF1aGR1Mmdtbmh1bGQ4YzJobW52NnEgYWJoaWlpc3RhcmtAbQ\",\"created\":\"2026-03-25T16:45:13.000Z\",\"updated\":\"2026-03-25T16:45:13.573Z\",\"summary\":\"VALIDATION-TEST-Existing-Event\",\"creator\":{\"email\":\"[redacted-email]\",\"self\":true},\"organizer\":{\"email\":\"[redacted-email]\",\"self\":true},\"start\":{\"dateTime\":\"2026-04-27T17:00:00Z\",\"timeZone\":\"UTC\"},\"end\":{\"dateTime\":\"2026-04-27T18:00:00Z\",\"timeZone\":\"UTC\"},\"iCalUID\":\"[redacted-email]\",\"sequence\":0,\"reminders\":{\"useDefault\":true},\"eventType\":\"default\"},{\"kind\":\"calendar#event\",\"etag\":\"\\\"3548914328009950\\\"\",\"id\":\"79icpmnk41rlj3lgl9vlop4ci7\",\"status\":\"confirmed\",\"htmlLink\":\"https://www.google.com/calendar/event?eid=NzlpY3Btbms0MXJsajNsZ2w5dmxvcDRjaTcgYWJoaWlpc3RhcmtAbQ\",\"created\":\"2026-03-25T16:46:03.000Z\",\"updated\":\"2026-03-25T16:46:04.004Z\",\"summary\":\"Client-demo\",\"creator\":{\"email\":\"[redacted-email]\",\"self\":true},\"organizer\":{\"email\":\"[redacted-email]\",\"self\":true},\"start\":{\"dateTime\":\"2026-04-23T14:00:00Z\",\"timeZone\":\"UTC\"},\"end\":{\"dateTime\":\"2026-04-23T14:45:00Z\",\"timeZone\":\"UTC\"},\"iCalUID\":\"[redacted-email]\",\"sequence\":0,\"reminders\":{\"useDefault\":true},\"eventType\":\"default\"},{\"kind\":\"calendar#event\",\"etag\":\"\\\"3548914373469886\\\"\",\"id\":\"0o08ecc518p6ehg53j7rpglo2v\",\"status\":\"confirmed\",\"htmlLink\":\"https://www.google.com/calendar/event?eid=MG8wOGVjYzUxOHA2ZWhnNTNqN3JwZ2xvMnYgYWJoaWlpc3RhcmtAbQ\",\"created\":\"2026-03-25T16:46:26.000Z...<truncated>",
+      "required_scopes": [
+        "https://www.googleapis.com/auth/calendar.readonly"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/calendar.events",
+        "https://www.googleapis.com/auth/calendar"
+      ]
+    },
+    {
+      "tool_slug": "GOOGLECALENDAR_CREATE_EVENT",
+      "method": "POST",
+      "path": "/calendar/v3/calendars/primary/events",
+      "status": "valid",
+      "http_status_code": 200,
+      "response_summary": "minimal request: Endpoint executed successfully with 200. (endpoint=/calendars/primary/events, account=ca_sCKRS8YhfstO)",
+      "response_body": {
+        "kind": "calendar#event",
+        "etag": "\"3548927858290078\"",
+        "id": "asjfbrvrrhsalpi6b9uec7unkk",
+        "status": "confirmed",
+        "htmlLink": "https://www.google.com/calendar/event?eid=YXNqZmJydnJyaHNhbHBpNmI5dWVjN3Vua2sgYWJoaWlpc3RhcmtAbQ",
+        "created": "2026-03-25T18:38:49.000Z",
+        "updated": "2026-03-25T18:38:49.145Z",
+        "summary": "VALIDATION-TEST-Daily Focus Block",
+        "creator": {
+          "email": "[redacted-email]",
+          "self": true
+        },
+        "organizer": {
+          "email": "[redacted-email]",
+          "self": true
+        },
+        "start": {
+          "dateTime": "2026-03-25T18:53:47Z",
+          "timeZone": "UTC"
+        },
+        "end": {
+          "dateTime": "2026-03-25T19:53:47Z",
+          "timeZone": "UTC"
+        },
+        "iCalUID": "[redacted-email]",
+        "sequence": 0,
+        "reminders": {
+          "useDefault": true
+        },
+        "eventType": "default"
+      },
+      "required_scopes": [
+        "https://www.googleapis.com/auth/calendar.events"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/calendar.events",
+        "https://www.googleapis.com/auth/calendar"
+      ]
+    },
+    {
+      "tool_slug": "GOOGLECALENDAR_GET_EVENT",
+      "method": "GET",
+      "path": "/calendar/v3/calendars/primary/events/{eventId}",
+      "status": "error",
+      "http_status_code": null,
+      "response_summary": "Path parameters could not be resolved from dependency endpoints.",
+      "response_body": {
+        "error": "Could not resolve required path parameters."
+      },
+      "required_scopes": [
+        "https://www.googleapis.com/auth/calendar.readonly"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/calendar.events",
+        "https://www.googleapis.com/auth/calendar"
+      ]
+    },
+    {
+      "tool_slug": "GOOGLECALENDAR_LIST_CALENDARS",
+      "method": "GET",
+      "path": "/calendar/v3/users/me/calendarList",
+      "status": "valid",
+      "http_status_code": 200,
+      "response_summary": "minimal request: Endpoint executed successfully with 200. (endpoint=/users/me/calendarList, account=ca_sCKRS8YhfstO)",
+      "response_body": {
+        "kind": "calendar#calendarList",
+        "etag": "\"p33nvd85sqqtp60o\"",
+        "nextSyncToken": "CO_2oLzWu5MDEhVhYmhpaWlzdGFya0BnbWFpbC5jb20=",
+        "items": [
+          {
+            "kind": "calendar#calendarListEntry",
+            "etag": "\"1774456296306575\"",
+            "id": "[redacted-email]",
+            "summary": "[redacted-email]",
+            "timeZone": "UTC",
+            "colorId": "14",
+            "backgroundColor": "#9fe1e7",
+            "foregroundColor": "#000000",
+            "selected": true,
+            "accessRole": "owner",
+            "defaultReminders": [
+              {
+                "method": "popup",
+                "minutes": 30
+              }
+            ],
+            "notificationSettings": {
+              "notifications": [
+                {
+                  "type": "eventCreation",
+                  "method": "email"
+                },
+                {
+                  "type": "eventChange",
+                  "method": "email"
+                },
+                {
+                  "type": "eventCancellation",
+                  "method": "email"
+                },
+                {
+                  "type": "eventResponse",
+                  "method": "email"
+                }
+              ]
+            },
+            "primary": true,
+            "conferenceProperties": {
+              "allowedConferenceSolutionTypes": [
+                "hangoutsMeet"
+              ]
+            }
+          },
+          {
+            "kind": "calendar#calendarListEntry",
+            "etag": "\"1774456296306575\"",
+            "id": "en.indian#[redacted-email]",
+            "summary": "Holidays in India",
+            "description": "Holidays and Observances in India",
+            "timeZone": "UTC",
+            "colorId": "8",
+            "backgroundColor": "#16a765",
+            "foregroundColor": "#000000",
+            "selected": true,
+            "accessRole": "reader",
+            "defaultReminders": [],
+            "conferenceProperties": {
+              "allowedConferenceSolutionTypes": [
+                "hangoutsMeet"
+              ]
+            }
+          }
+        ]
+      },
+      "required_scopes": [
+        "https://www.googleapis.com/auth/calendar.readonly"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/calendar.events",
+        "https://www.googleapis.com/auth/calendar"
+      ]
+    },
+    {
+      "tool_slug": "GOOGLECALENDAR_DELETE_EVENT",
+      "method": "DELETE",
+      "path": "/calendar/v3/calendars/primary/events/{eventId}",
+      "status": "error",
+      "http_status_code": null,
+      "response_summary": "Path parameters could not be resolved from dependency endpoints.",
+      "response_body": {
+        "error": "Could not resolve required path parameters."
+      },
+      "required_scopes": [
+        "https://www.googleapis.com/auth/calendar.events"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/calendar.events",
+        "https://www.googleapis.com/auth/calendar"
+      ]
+    },
+    {
+      "tool_slug": "GOOGLECALENDAR_LIST_REMINDERS",
+      "method": "GET",
+      "path": "/calendar/v3/calendars/primary/reminders",
+      "status": "invalid_endpoint",
+      "http_status_code": 404,
+      "response_summary": "minimal request: Endpoint path/method appears invalid (404). (endpoint=/calendars/primary/reminders, account=ca_sCKRS8YhfstO)",
+      "response_body": "<!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 404 (Not Found)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}\n  </style>\n  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>\n  <p><b>404.</b> <ins>That’s an error.</ins>\n  <p>The requested URL <code>/calendar/v3/calendars/primary/reminders</code> was not found on this server.  <ins>That’s all we know.</ins>\n",
+      "required_scopes": [
+        "https://www.googleapis.com/auth/calendar.readonly"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/calendar.events",
+        "https://www.googleapis.com/auth/calendar"
+      ]
+    }
+  ],
+  "summary": {
+    "valid": 11,
+    "invalid_endpoint": 3,
+    "insufficient_scopes": 0,
+    "error": 2
+  }
+}

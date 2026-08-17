@@ -1,0 +1,214 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+
+@layer base {
+  :root {
+    --font-satoshi: 'Cormorant Garamond', 'Georgia', serif;
+    --font-inter: 'Inter', system-ui, sans-serif;
+    --font-playfair: 'Playfair Display', 'Georgia', serif;
+    --font-classic: 'Cormorant Garamond', 'Georgia', serif;
+    --font-nav: 'DM Sans', system-ui, sans-serif;
+
+    --color-bg: #0A0A0A;
+    --color-surface: #111111;
+    --color-text-primary: #CCCCCC;
+    --color-text-muted: #666666;
+    --color-accent-warm: #FF8A4D;
+    --color-accent-cyan: #00F5FF;
+    --color-glass: rgba(255, 255, 255, 0.03);
+    --color-border: rgba(255, 255, 255, 0.08);
+  }
+
+  html {
+    font-size: 15.5px;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-deep-space text-white antialiased;
+    font-family: var(--font-inter);
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: rgba(255, 138, 77, 0.3);
+    color: white;
+  }
+
+  a:focus,
+  button:focus {
+    outline: none;
+  }
+
+  a:focus-visible,
+  button:focus-visible {
+    outline: none;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0A0A0A;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #FF8A4D;
+  }
+}
+
+@layer components {
+  .text-gradient-warm {
+    background: linear-gradient(to right, var(--color-accent-warm), var(--color-accent-cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .glass-card {
+    background: var(--color-glass);
+    @apply backdrop-blur-[20px] border border-white/10 rounded-2xl;
+  }
+
+  /* Custom Geometric Noir Animations */
+  .geometric-bg {
+    background-image: url('https://images.unsplash.com/photo-1649939929524-681f8b1faa07?auto=format&w=1440&q=80');
+    @apply absolute inset-0 bg-cover bg-center opacity-[0.15] mix-blend-overlay pointer-events-none;
+  }
+
+  .hero-charcoal-bg {
+    background-color: #0A0A0A;
+    background-image:
+      linear-gradient(rgba(255, 140, 66, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 140, 66, 0.03) 1px, transparent 1px),
+      radial-gradient(ellipse 80% 60% at 20% 20%, rgba(255, 140, 66, 0.06), transparent 55%),
+      radial-gradient(ellipse 70% 50% at 85% 75%, rgba(217, 119, 6, 0.04), transparent 50%),
+      linear-gradient(135deg, rgba(17, 17, 17, 0.95) 0%, rgba(10, 10, 10, 1) 45%, rgba(15, 15, 15, 1) 100%);
+    background-size: 72px 72px, 72px 72px, 100% 100%, 100% 100%, 100% 100%;
+  }
+
+  .hero-charcoal-bg::before {
+    content: '';
+    @apply absolute inset-0 pointer-events-none;
+    background:
+      linear-gradient(115deg, transparent 42%, rgba(255, 140, 66, 0.025) 50%, transparent 58%),
+      linear-gradient(245deg, transparent 38%, rgba(107, 114, 128, 0.04) 48%, transparent 58%);
+  }
+
+  .hero-charcoal-bg::after {
+    content: '';
+    @apply absolute inset-0 pointer-events-none;
+    background: radial-gradient(circle at center, transparent 35%, rgba(10, 10, 10, 0.75) 100%);
+  }
+
+  .diamond-grid-item {
+    @apply relative transition-all duration-[0.8s] ease-[cubic-bezier(0.23,1,0.32,1)];
+  }
+
+  .diamond-inner {
+    @apply w-full h-full rotate-[45deg] overflow-hidden transition-all duration-[0.8s] ease-[cubic-bezier(0.23,1,0.32,1)];
+  }
+
+  .diamond-content {
+    @apply w-full h-full rotate-[-45deg] transition-all duration-[0.8s] ease-[cubic-bezier(0.23,1,0.32,1)];
+  }
+
+  .diamond-grid-item:hover {
+    @apply z-50;
+  }
+
+  .diamond-grid-item:hover .diamond-inner {
+    @apply rotate-0 scale-[1.1];
+  }
+
+  .diamond-grid-item:hover .diamond-content {
+    @apply rotate-0;
+  }
+
+  .ledger-row {
+    @apply border-b border-white/5 transition-all duration-500 ease-out;
+  }
+
+  .ledger-row:hover {
+    @apply bg-white/[0.03];
+  }
+
+  .noise-overlay {
+    @apply fixed inset-0 pointer-events-none z-[9999] opacity-[0.05];
+    background: url('https://grainy-gradients.vercel.app/noise.svg');
+  }
+
+  .cinematic-shadow {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8), 
+                0 0 100px -20px rgba(255, 138, 77, 0.1);
+  }
+
+  .hover-lift {
+    @apply transition-all duration-500;
+    transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.9),
+                0 0 80px -20px rgba(255, 138, 77, 0.15);
+  }
+
+  .hairline {
+    @apply h-px bg-gradient-to-r from-transparent via-white/20 to-transparent;
+  }
+
+  .section-number {
+    @apply font-display text-8xl md:text-9xl font-bold text-white/5 select-none leading-none;
+  }
+
+  .font-classic {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  .font-classic-italic {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .transition-smooth {
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .transition-smooth-slow {
+    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .will-change-transform {
+    will-change: transform;
+  }
+
+  .gpu-accelerate {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}

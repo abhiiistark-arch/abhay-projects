@@ -1,0 +1,43 @@
+# Environment & secrets
+.env
+.env.local
+.env.production
+*.pem
+*.key
+credentials.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Data & outputs
+data/output/
+data/temp/
+client_secrets.json
+data/credentials/
+data/cookies/*.json
+data/*.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Playwright
+playwright-report/
+test-results/
+
+# Bundled local tools (auto-downloaded)
+tools/
